@@ -1,0 +1,332 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px; /* Prevents content from being hidden behind fixed nav */
+}
+
+/* Navbar */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #e63946;
+    border-bottom: 2px solid #e63946;
+}
+
+/* Hero Section */
+.hero {
+    background: url('boxing-hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Title Styling */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Content Block Styling */
+#training, #world-boxing {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Image Styling for Training Section */
+#training .content-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* List Styling for Training Techniques */
+#training ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#training ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#training ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #e63946;
+}
+
+/* World Boxing Section Styling */
+#world-boxing {
+    background-color: #fafafa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Callout Section Styling */
+.callout {
+    background-color: #e63946;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.callout h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.callout p {
+    font-size: 1.1rem;
+}
+
+/* Home Section */
+#home {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#home .content-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* History Section */
+#history {
+    background-color: #fafafa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#history p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#history .content-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Champions Section */
+#champions {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#champions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#champions .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#champions .gallery-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#champions .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#champions .gallery-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fafafa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#contact .contact-list {
+    list-style: none;
+}
+
+#contact .contact-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#contact .contact-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact .contact-list a:hover {
+    color: #e63946;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    #training, #world-boxing {
+        padding: 30px;
+    }
+}
